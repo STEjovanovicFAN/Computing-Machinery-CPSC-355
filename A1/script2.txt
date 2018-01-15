@@ -1,0 +1,44 @@
+Script started on Fri Jan 29 14:04:42 2016
+sh-3.00$ gdb test4
+GNU gdb 6.2.1
+Copyright 2004 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "sparc-sun-solaris2.10"...(no debugging symbols found)...
+(gdb) b done
+Breakpoint 1 at 0x1075c
+(gdb) r
+Starting program: /home/ugc/stefan.jovanovic/Computer Science /355/A1/test4 
+(no debugging symbols found)...(no debugging symbols found)...X: -6 y: 11 minimum: 11
+X: -5 y: 142 minimum: 11
+X: -4 y: 177 minimum: 11
+X: -3 y: 146 minimum: 11
+X: -2 y: 79 minimum: 11
+X: -1 y: 6 minimum: 6
+X: 0 y: -43 minimum: -43
+X: 1 y: -38 minimum: -43
+X: 2 y: 51 minimum: -43
+X: 3 y: 254 minimum: -43
+X: 4 y: 601 minimum: -43
+X: 5 y: 1122 minimum: -43
+X: 6 y: 1847 minimum: -43
+
+Breakpoint 1, 0x0001075c in done ()
+(gdb) display/i $l0
+1: x/i $l0  0xffffffd5: Cannot access memory at address 0xffffffd5
+Disabling display 1 to avoid infinite recursion.
+(gdb) l 1
+Undefined command: "1".  Try "help".
+(gdb) xi  p $l0
+$1 = -43
+(gdb) q c
+Continuing.
+
+Program exited with code 032.
+(gdb) q
+sh-3.00$ exit
+exit
+
+script done on Fri Jan 29 14:08:53 2016

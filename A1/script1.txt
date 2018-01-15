@@ -1,0 +1,60 @@
+Script started on Fri Jan 29 14:15:36 2016
+sh-3.00$ gdb test4
+GNU gdb 6.2.1
+Copyright 2004 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "sparc-sun-solaris2.10"...(no debugging symbols found)...
+(gdb) b main
+Breakpoint 1 at 0x106b4
+(gdb) display/i p $pc
+(gdb) r
+Starting program: /home/ugc/stefan.jovanovic/Computer Science /355/A1/test4 
+(no debugging symbols found)...
+Breakpoint 1, 0x000106b4 in main ()
+1: x/i $pc  0x106b4 <main+4>:   mov  0x64, %l0
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) ni
+0x000106b8 in main ()
+1: x/i $pc  0x106b8 <main+8>:   mov  -6, %l1
+(gdb) n xi /65i main
+0x106b0 <main>: save  %sp, -96, %sp
+0x106b4 <main+4>:       mov  0x64, %l0
+0x106b8 <main+8>:       mov  -6, %l1
+0x106bc <main+12>:      mov  5, %i1
+0x106c0 <main+16>:      mov  0x1b, %i2
+0x106c4 <main+20>:      mov  0x2b, %i3
+0x106c8 <test>: cmp  %l1, 7
+0x106cc <test+4>:       bge  0x1075c <done>
+0x106d0 <test+8>:       mov  1, %g1
+0x106d4 <test+12>:      mov  %l1, %o0
+0x106d8 <test+16>:      call  0x20894 <.mul>
+0x106dc <test+20>:      mov  %l1, %o1
+0x106e0 <test+24>:      call  0x20894 <.mul>
+0x106e4 <test+28>:      mov  %l1, %o1
+0x106e8 <test+32>:      call  0x20894 <.mul>
+0x106ec <test+36>:      mov  %i1, %o1
+0x106f0 <test+40>:      mov  %o0, %l2
+0x106f4 <test+44>:      mov  %l1, %o0
+0x106f8 <test+48>:      call  0x20894 <.mul>
+0x106fc <test+52>:      mov  %l1, %o1
+0x10700 <test+56>:      call  0x20894 <.mul>
+0x10704 <test+60>:      mov  %i2, %o1
+0x10708 <test+64>:      mov  %o0, %l3
+---Type <return> to continue, or q <return> to quit---q
+Quit
+(gdb) p $l0
+$1 = 100
+(gdb) p $l1
+$2 = 0
+(gdb) q
+The program is running.  Exit anyway? (y or n) y
+sh-3.00$ exit
+exit
+
+script done on Fri Jan 29 14:19:12 2016

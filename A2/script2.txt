@@ -1,0 +1,587 @@
+Script started on Sat Feb 13 14:16:21 2016
+sh-3.00$ gdb test2
+GNU gdb 6.2.1
+Copyright 2004 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "sparc-sun-solaris2.10"...(no debugging symbols found)...
+(gdb) b set  1
+Breakpoint 1 at 0x10700
+(gdb) b condition1
+Breakpoint 2 at 0x10780
+(gdb) b startloop1
+Breakpoint 3 at 0x10754
+(gdb) b   set   b set 2  2
+Breakpoint 4 at 0x107cc
+(gdb) r
+Starting program: /home/ugc/stefan.jovanovic/Computer Science /355/A2/test2 
+(no debugging symbols found)...
+Breakpoint 1, 0x00010700 in set1 ()
+(gdb) ni
+0x00010704 in set1 ()
+(gdb) ni
+0x00010708 in set1 ()
+(gdb) ni
+0x0001070c in set1 ()
+(gdb) ni
+0x00010710 in set1 ()
+(gdb) ni
+0x00010714 in set1 ()
+(gdb) ni
+0x00010718 in set1 ()
+(gdb) ni
+(no debugging symbols found)...Mulitiplier before: 72e8b8c
+
+r
+ni
+^C
+Program received signal SIGINT, Interrupt.
+0x00010720 in set1 ()
+(gdb) ni
+Multiplicand before: 4ee67b7
+Product before: 0
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) p   $l5
+$1 = 0
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) nn i
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) p$ l5     $l5
+$2 = 1
+(gdb) p $l3
+$3 = 0
+(gdb) p $l0
+$4 = 82732983
+(gdb) p % $l1
+$5 = 60245446
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) n p $l5
+$6 = 2
+(gdb) p $l0
+$7 = 82732983
+(gdb) p $l1
+$8 = 30122723
+(gdb) p $l32 
+$9 = 0
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010764 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010764 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) p $l5
+$10 = 4
+(gdb) n
+Single stepping until exit from function condition1, 
+which has no line number information.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) p $l5
+$11 = 5
+(gdb) p $l0
+$12 = 82732983
+(gdb) p $l1
+$13 = 270318126
+(gdb) p $l2
+$14 = 0
+(gdb) p $l3
+$15 = 165465966
+(gdb) p $l32105[3Pni
+0x0001077c in skip1 ()
+(gdb) nip $l3[3Pni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010764 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010764 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) p $l5
+$16 = 9
+(gdb) p $l0
+$17 = 82732983
+(gdb) p $l1
+$18 = 1107531589
+(gdb) p $l3
+$19 = 330931932
+(gdb) p $l3105[3Pni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010764 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) ni
+0x00010778 in skip1 ()
+(gdb) ni
+0x0001077c in skip1 ()
+(gdb) ni
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) ni
+0x00010784 in condition1 ()
+(gdb) ni
+0x00010788 in condition1 ()
+(gdb) ni
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) ni
+0x00010758 in startloop1 ()
+(gdb) ni
+0x0001075c in startloop1 ()
+(gdb) ni
+0x00010760 in startloop1 ()
+(gdb) ni
+0x00010768 in skip1 ()
+(gdb) ni
+0x0001076c in skip1 ()
+(gdb) ni
+0x00010770 in skip1 ()
+(gdb) ni
+0x00010774 in skip1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x00010754 in startloop1 ()
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00010780 in condition1 ()
+(gdb) c
+Continuing.
+Mulitiplier after: 2e58684
+Mutiplicand after: 4ee67b7
+Product after: 4509ac02
+
+
+Breakpoint 4, 0x000107cc in set2 ()
+(gdb) c p $l5
+$20 = 32
+(gdb) p $l0
+$21 = 82732983
+(gdb) p $l1
+$22 = 48596612
+(gdb) p $l3
+$23 = 1158261762
+(gdb) q
+The program is running.  Exit anyway? (y or n) y
+sh-3.00$ exit
+exit
+
+script done on Sat Feb 13 14:24:56 2016
